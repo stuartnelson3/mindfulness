@@ -2,18 +2,96 @@
 <html lang="en">
   <head>
   <meta charset="UTF-8">
-  <title>Mindfulness</title>
-  <link href="/style.css" rel="stylesheet">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> <title>Mindfulness</title>
   <script src="/script.js"></script>
   </head>
   <body>
+    <div class="navbar navbar-default navbar-fixed-top navbar-transparent">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="./" class="navbar-brand">Mindfulness</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Quick links <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/bibliography">Bibiography</a>
+            </li>
+          </ul>
 
-  <div class="wrapper">
-    <div class="title">
-      <h1>Mindfulness for Vanessa</h1>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/authors">Authors</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Additional links <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="additional links">
+                <li><a target="_blank" href="http://en.wikipedia.org/wiki/Mindfulness">Mindfulness &mdash; Wikpedia</a></li>
+                <li><a target="_blank" href="http://www.nytimes.com/2015/04/19/magazine/the-muddied-meaning-of-mindfulness.html">New York Times Article</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
     </div>
-    <%= yield %>
-  </div>
+
+    <div class="splash">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Mindfulness</h1>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <p>
+                  Nam sit amet finibus purus. Nunc arcu nisl, dignissim quis mi
+                  in, venenatis consequat massa. Fusce turpis risus, mattis
+                  laoreet massa et, fermentum varius enim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="container">
+      <footer>
+        <div class="col-lg-12">
+          <ul class="list-unstyled">
+            <li class="pull-right"><a href="#top">Back to top</a></li>
+            <li><a href="">Links</a></li>
+            <li><a href="">To Things</a></li>
+            <li><a href="">You Want</a></li>
+            <li><a href="">To Link to</a></li>
+          </ul>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
