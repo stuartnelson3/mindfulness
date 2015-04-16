@@ -42,3 +42,7 @@ footer li {
 .active {
   background-color: lightblue;
 }
+
+.full-width {
+  width: 100%;
+}
