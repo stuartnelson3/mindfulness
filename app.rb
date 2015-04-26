@@ -5,10 +5,10 @@ get '/' do
   erb :index
 end
 
-get '/authors' do
+get '/auteurs' do
   erb :authors
 end
 
-get '/bibliography' do
+get '/bibliographie' do
   erb :bibliography
 end

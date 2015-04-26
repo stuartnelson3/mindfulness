@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  if (location.pathname === "/bibliography") {
+  if (location.pathname === "/bibliographie") {
     $(location.hash).addClass("active");
   }
 });
